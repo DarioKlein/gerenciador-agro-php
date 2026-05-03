@@ -45,7 +45,7 @@ docker compose down
 Após subir o projeto:
 
 * Aplicação PHP:
-  👉 [http://localhost](http://localhost/insumo.php)
+  👉 [http://localhost/insumo.php](http://localhost/insumo.php)
 
 * phpMyAdmin:
   👉 [http://localhost:8080](http://localhost:8080)
