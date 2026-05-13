@@ -27,4 +27,12 @@ class Agricultor
     }
     return $lista;
   }
+
+  public function insert(\MODEL\Agricultor $agricultor)
+  {
+    $query = "INSERT INTO agricultor (nome, cidade, bairro, idade) VALUES ('{$agricultor->getNome()}', '{$agricultor->getCidade()}', '{$agricultor->getBairro()}', {$agricultor->getIdade()})";
+    $conexao = Conexao::conectar();
+    $result = $conexao->query($query);
+    return $result;
+  }
 }
