@@ -1,4 +1,8 @@
 <?php
+
+namespace DAL;
+use PDO;
+use PDOException;
 class Conexao
 {
   private static $dbname = 'agro';

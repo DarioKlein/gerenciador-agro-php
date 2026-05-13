@@ -1,7 +1,7 @@
 <?php
-include_once 'conexao.php';
+include_once __DIR__ . '/../../dal/conexao.php';
 $sql = "SELECT * FROM tipoinsumo";
-$conexao = Conexao::conectar();
+$conexao = DAL\Conexao::conectar();
 $dados = $conexao->query($sql);
 ?>
 
